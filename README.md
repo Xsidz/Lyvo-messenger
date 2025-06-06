@@ -6,8 +6,7 @@
 
 ## 📸 Preview
 
-![Lyvo Chat UI Screenshot]
-<img width="1663" alt="Screenshot 2025-06-05 a<img width="1663" alt="Screenshot 2025-06-05 at 6 02 54 PM" src="https://github.com/user-attachments/assets/58d60d15-c23e-4f98-977e-bff2bd241d42" />
+<img width="1663" alt="Screenshot 2025-06-05 at 6 02 54 PM" src="https://github.com/user-attachments/assets/58d60d15-c23e-4f98-977e-bff2bd241d42" />
 
 <img width="1663" alt="Screenshot 2025-06-05 at 6 03 02 PM" src="https://github.com/user-attachments/assets/c2aa46d0-a8fe-491c-91b4-7ef362232008" />
 
@@ -50,29 +49,7 @@ https://github.com/user-attachments/assets/5b74a913-c6a8-4d00-a2b3-8499bc1e402e
 
 ---
 
-## 📁 Project Structure
 
-Lyvo/
-├── backend/
-│ ├── src/
-│ │ ├── controllers/
-│ │ ├── models/
-│ │ ├── routes/
-│ │ ├── lib/db.js
-│ │ └── index.js
-├── frontend/
-│ ├── src/
-│ │ ├── pages/
-│ │ ├── components/
-│ │ ├── store/ <-- Zustand Store
-│ │ ├── context/
-│ │ ├── App.jsx
-│ │ └── main.jsx
-├── .env
-├── README.md
-
-
----
 
 ## ⚙️ Installation
 
