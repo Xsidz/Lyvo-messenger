@@ -2,19 +2,25 @@ version: '3.8'
 
 services:
     backend :
-      build : 
-        context : . 
+      build :
+        context : .
         dockerfile : Dockerfile.backend
-      ports : 
+      ports :
       - "5001:5001"
       restart : unless-stopped
-    
-    frontend : 
-       build : 
+
+    frontend :
+       build :
          context : .
          dockerfile : Dockerfile.frontend
+         # Add build arguments here to pass env vars to the Docker build process
+         args:
+           VITE_API_URL: http://localhost:5001/api
+           VITE_SOCKET_URL: http://localhost:5001
        ports :
-        - "5713:80"
+        - "5173:80"
        restart : unless-stopped
-
-      
+       # Keep environment here for runtime clarity, though build args are key for Vite
+       environment:
+         - VITE_API_URL=http://localhost:5001/api
+         - VITE_SOCKET_URL=http://localhost:5001
