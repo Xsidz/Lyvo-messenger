@@ -12,13 +12,24 @@ import { Toaster } from "react-hot-toast";
 import { useThemeStore } from "./store/useThemeStore.js";
 
 const App = () => {
-  const { authUser, checkAuth,isCheckingAuth , onlineUsers} = useAuthStore();
+  const { authUser, checkAuth,isCheckingAuth , onlineUsers,connectSocket,disconnectSocket} = useAuthStore();
   const {theme} = useThemeStore();
 
   console.log("Online Users",onlineUsers)
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
+
+    useEffect(() => {
+    // Only attempt to connect/disconnect socket after the initial auth check is complete
+    if (!isCheckingAuth) {
+      if (authUser) {
+        connectSocket();
+      } else {
+        disconnectSocket();
+      }
+    }
+  }, [authUser, isCheckingAuth, connectSocket, disconnectSocket]);
 
   console.log(authUser);
 
