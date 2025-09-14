@@ -381,8 +381,8 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Siddhesh Kabra**
-- GitHub: [@siddheshkabra](https://github.com/siddheshkabra)
-- Email: [your-email@example.com]
+- GitHub: [@siddheshkabra](https://github.com/xsidz)
+- Email: [siddhesh.kabraa@gmail.com]
 
 ---
 
